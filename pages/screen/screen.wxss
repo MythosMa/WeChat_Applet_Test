@@ -1,0 +1,7 @@
+/* pages/screen/screen.wxss */
+@import "../home/HomeScene.wxss" ;
+.rpx{
+  width:375rpx;
+  height: 400rpx;
+  background-color: red;
+}

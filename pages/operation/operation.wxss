@@ -1,0 +1,4 @@
+/* pages/operation/operation.wxss */
+.text{
+	background-color: gray;
+}

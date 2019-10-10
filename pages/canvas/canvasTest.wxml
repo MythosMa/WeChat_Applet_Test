@@ -1,0 +1,12 @@
+<!--pages/canvas/canvasTest.wxml-->
+<!-- ===================================================================================================================== -->
+<!-- canvas -->
+<canvas style='width:{{canvasWidth}}px;height:{{canvasHeight}}px;background-color:gray;' 
+        canvas-id='firstCanvas' 
+				bindtouchstart='touchStartCallback'
+				bindtouchmove='touchMoveCallback'
+				bindtouchend='touchEndCallback'
+				bindtouchmove='touchMoveCallback'
+				>
+</canvas>
+

@@ -1,0 +1,62 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.scrollView{
+	position: absolute;
+	width: 750rpx;
+	height: 1110rpx;
+}
+
+.view{
+	position: absolute;
+	width: 750rpx;
+	height: 1110rpx;
+
+	animation-name: moveAction;
+	animation-duration: 10000ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-name: moveAction;
+	-webkit-animation-duration: 100000ms;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.viewImage{
+	width: 750rpx;
+	height: 1110rpx;
+}
+
+.text{
+	position: absolute;
+	width: 750rpx;
+	height: 1110rpx;
+}
+
+@keyframes moveAction{
+	from{
+		top: 0rpx;
+	}to{
+		top: 1105rpx;
+	}
+}

@@ -1,0 +1,68 @@
+<!--pages/home/HomeScene.wxml-->
+<view style='color:red'>HomeScene</view>
+<view><text>{{name}}</text></view>
+<view><text>{{password}}</text></view>
+<button bindtap="toIndex">跳转界面</button>
+<!--hover-class:点击时候的样式-->
+<navigator hover-class='active' url='../test/test'>跳转界面</navigator>
+<button bindtap='say'>说吧</button>
+
+<!-- 内容赋值 -->
+<button id='{{id}}' bindtap='countAdd'>{{count}}</button>
+
+<!-- ===================================================================================================================== -->
+<!-- 条件渲染 -->
+<!-- <button bindtap='conditionChange'>条件渲染{{condition}}</button>
+<view wx:if='{{condition}}'>条件渲染显示</view> -->
+<!-- 标签名字可以自定义 -->
+<!-- <block wx:if='{{condition}}'>
+<view>条件渲染显示-block中</view>
+<view>条件渲染显示-block中</view>
+</block>
+<view wx:if='{{count%3==0}}' style='color:red'>点说吧下面那个数字改变颜色,有三种哦</view>
+<view wx:elif='{{count%3==1}}' style='color:green'>点说吧下面那个数字改变颜色,有三种哦</view>
+<view wx:else='{{count%3==2}}' style='color:blue'>点说吧下面那个数字改变颜色,有三种哦</view> -->
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- 列表渲染 key的用处是为了标明数值在数据中的唯一性，用来提高效率，如果没有key值，使用*this表示key就是item自身，要确保item在数据中唯一 -->
+<!-- 如果不加 wx:key, 在 setData 之后，如果 array 内的数据如果发生改变，会重新创建前端的渲染对象 -->
+<!-- 加上 wx:key，重新渲染时，只是将对应的对象重新排序。未发生变化的对象，不会重新创建 -->
+<!-- <view wx:for='{{array}}' wx:key='*this'>下标:{{index}}->内容:{{item}}</view> -->
+<!-- 自定义下标和值的名称 -->
+<!-- <view wx:for='{{array}}' wx:key='*this' wx:for-index='i' wx:for-item='value'>下标:{{i}}->内容:{{value}}</view> -->
+<!-- 循环嵌套 99表 -->
+<!-- <view wx:for='{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}' wx:for-item='i'>
+  <view wx:for='{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}' wx:for-item='j'>
+    <view wx:if='{{j <= i}}'>
+    {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view> -->
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- 模板 结构化的显示 模板的定义 拥有独立作用域 可以用在对象上 -->
+<!-- <template name='testTemplate'>
+<view>模板变量a:{{template_a}}</view>
+<view>模板变量b:{{template_b}}</view>
+<view>模板变量count(能否获取定义的count):{{count}}</view>
+</template> -->
+<!-- 模板的使用 -->
+<!-- <template is='testTemplate' data='{{template_a:1, template_b:2}}'>
+</template> -->
+<!-- 模板的对象使用 变量名称(key)必须一致 -->
+<template name='testTemplate'>
+<view>tel:{{personTel}}</view>
+<view>age:{{personAge}}</view>
+<view>name:{{personName}}</view>
+<view>sex:{{sex}}</view>
+</template>
+<!-- ...表示传递的是个对象 -->
+<!-- <template is='testTemplate' data='{{sex:"male", ...person}}'>
+</template> -->
+<!-- ===================================================================================================================== -->
+
+
+
+

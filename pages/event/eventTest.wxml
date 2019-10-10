@@ -1,0 +1,30 @@
+<!--pages/event/eventTest.wxml-->
+<!-- ===================================================================================================================== -->
+<!-- 事件 event target(事件触发的来源) currentTarget(event事件监听的来源) -->
+<!-- dataset 自定义数据 -->
+<!-- 冒泡 bindtap会导致冒泡 catch不会 -->
+<view id='outter' style='border : 1px solid red;' bindtap='outterTap'>
+  outter view
+  <view id='middle' style='border : 1px solid green;' catchtap='middleTap'>
+  middle view
+    <view id='inner' data-mythos='o he he he' style='border : 1px solid blue;' bindtap='innerTap'>
+    inner view
+    </view>
+  </view>
+</view>
+
+<!-- 触摸 bindtap bindtouchstart bindtouchend catchtap catchtouchstart catchtouchend -->
+<view id='inner' style='border : 1px solid blue;' bindtouchend='touchAndTap'>
+    tap view
+</view>
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- 引用 -->
+<!-- import可引用template但不能跨文件引用 -->
+<!-- <import src='../home/HomeScene.wxml' />
+<template is='testTemplate' data='{{sex:"male", personTel:"18600361321", personAge:30, personName:"MythosMa"}}'></template> -->
+<!-- include除了template其他的都引用 -->
+<!-- <include src='../home/HomeScene.wxml' />
+<template is='testTemplate' data='{{sex:"male", personTel:"18600361321", personAge:30, personName:"MythosMa"}}'></template> -->
+<!-- ===================================================================================================================== -->

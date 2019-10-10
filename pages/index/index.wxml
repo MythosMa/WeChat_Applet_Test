@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<!-- 视图层 -->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto"> -->
+<!-- 按键，bindtap（轻触操作，绑定回调函数） -->
+<!-- <button bindtap='changeMotto'>点击</button>
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<!-- 测试用例 -->
+<!-- <scroll-view class='view'>
+  <view class='view' style='left:{{positionX}}rpx;top:{{positionY}}rpx;'>
+    <image class='viewImage' src='../../images/run_family_2_1.png'></image>
+  </view>
+  <view class='view' style='left:{{positionX}}rpx;top:{{positionY_2}}rpx;'>
+    <image class='viewImage' src='../../images/run_family_2_1.png'></image>
+  </view>
+</scroll-view>  -->
+
+<!-- 背景图片滚动轴测试用例 -->
+<!-- <scroll-view class='view' style='transform: rotate(90deg)'>
+  <view class='view' style='left:{{positionX}}rpx;top:{{positionY}}rpx;'>
+    <image class='viewImage' src='../../images/run_family_2_1.png'></image>
+  </view>
+  <view class='view' style='left:{{positionX}}rpx;top:{{positionY_2}}rpx;'>
+    <image class='viewImage' src='../../images/run_family_2_1.png'></image>
+  </view>
+</scroll-view>  -->
+<scroll-view class='scrollView'>
+
+  <view class='view'>
+    <image class='viewImage' src='../../images/run_family_2_1.png'></image>
+  </view>
+  <view class='view' style=''>
+    <image class='viewImage' src='../../images/run_family_2_1.png'></image>
+  </view>
+<view class='text'>{{text}}</view>
+
+</scroll-view>
+
+
+
+<!-- <view class='view' style='left:{{positionX}}rpx;top:{{positionY}}rpx; width : 250rpx;height : 100rpx'>这是一个view</view> -->
+<!-- <web-view src="https://mathbox.ibrainbaby.net/"></web-view> -->

@@ -1,0 +1,51 @@
+/* pages/container/container.wxss */
+.flex-wrap{
+	display: -webkit-flex;
+	flex-direction: column;
+	height: 1000rpx;
+}
+
+.flex-wrap view{
+	/* height: 200rpx; */
+	text-align: center;
+	font-size: 50rpx;
+	line-height: 200rpx;
+	color: white;
+}
+
+.a{
+	background-color: green;
+	flex: 1;
+}
+
+.b{
+	background-color: red;
+	flex: 1;
+}
+
+.c{
+	background-color: black;
+	flex: 2;
+}
+
+.wrap{
+	width: 400rpx;
+	height: 400rpx;
+	color: white;
+	border: 1rpx solid red;
+}
+
+.wrap view{
+	width: 800rpx;
+	height: 250rpx;
+}
+
+.textarea{
+	border: 2rpx solid black;
+	color: green;
+	height: 100rpx;
+}
+
+.textarea_placeholder{
+	color: skyblue;
+}

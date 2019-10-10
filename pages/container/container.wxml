@@ -1,0 +1,106 @@
+<!--pages/container/container.wxml-->
+
+<!-- ===================================================================================================================== -->
+<!-- flex弹性盒模型布局 -->
+<!-- <view class='flex-wrap'>
+  <view class='a'>a</view>
+  <view class='b'>b</view>
+  <view class='c'>c</view>
+</view> -->
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- scroll-view 可滚动区域 -->
+<!-- 与overflow:scroll相比，可操作性更强 -->
+<!-- bindscroll滚动时触发的事件 -->
+<!-- bindscrolltoupper距离顶部upper-threshold触发监听 -->
+<!-- bindscrolltolower距离底部lower-threshold触发监听 -->
+<!-- <scroll-view class='wrap' scroll-y='true' scroll-x='true' bindscrolltoupper='scrolltoupper' upper-threshold='200'  bindscrolltolower='scrolltolower' lower-threshold='200' scroll-into-view='{{toView}}'>
+  <view id='a' class='a'>a</view>
+  <view id='b' class='b'>b</view>
+  <view id='c' class='c'>c</view>
+</scroll-view>
+<button bindtap='tapChange'>切换</button> -->
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- swiper滑块视图容器 -->
+<!-- <swiper indicator-dots='true' autoplay='{{isAutoplay}}' interval='5000' duration='{{changeSpeed}}' bindchange='swiperChange'>
+  <swiper-item wx:for='{{imgUrls}}' wx:key='*this'>
+    <image src='{{item}}'>
+    </image>
+  </swiper-item>
+</swiper> -->
+
+<!-- slider滑块 -->
+<!-- <slider show-value='true' min='2000' max='4000' bindchange='sliderChange'></slider>
+<button bindtap='changeAutoplay'>开关{{!isAutoplay}}</button> -->
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- 基础内容组件 -->
+<!-- icon -->
+<!-- <icon type='success' size='100' color='black'></icon>
+<view>
+  <block wx:for='{{iconType}}' wx:key='*this'>
+    <icon type='{{item}}' size='100' color='black'></icon>
+  </block>
+</view> -->
+
+<!-- text -->
+<!-- <view>view里面的文字，嗯</view>
+<text>text里面的文字，嗯</text> -->
+
+<!-- progress -->
+<!-- <progress percent='50' show-info='true' stroke-width='50' color='black' active='true' active-mode='backwards'></progress> -->
+<!-- ===================================================================================================================== -->
+
+<!-- ===================================================================================================================== -->
+<!-- 表单组件 -->
+<!-- button -->
+<button size='mini' type='warn' plain='true'>按钮</button>
+<form bindsubmit='subCallback' bindreset='resetCallback'>
+  <input type='text' name='textName' placeholder='请输入内容'></input>
+  <button form-type='submit'>表单提交</button>
+  <button form-type='reset'>表单重置</button>
+</form>
+<!-- 复选框 -->
+<checkbox-group bindchange='checkboxCallback'>
+  <label wx:for='{{country}}' wx:key='*this'>
+    <checkbox value='{{item.name}}' checked='{{item.checked}}'>
+      {{item.value}}
+    </checkbox>
+  </label>
+</checkbox-group>
+<!-- form表单 -->
+<!-- picker滚动表单 -->
+<!-- 普通的 -->
+<view class='a'>选择城市:</view>
+<picker value='cityIndex' range='{{cities}}' bindchange='pickerNorCallback'>
+  <view>当前选择:{{cities[cityIndex]}}</view>
+</picker>
+<!-- 时间的 -->
+<view class='a'>选择时间:</view>
+<picker mode='time' start='09:00' end='20:00' value='{{time}}' bindchange='pickerTimeCallback'>
+  <view>当前选择:{{time}}</view>
+</picker>
+<!-- 日期的 -->
+<view class='a'>选择日期:</view>
+<picker mode='date' start='1988-11-17' end='2018-09-03' value='{{date}}' bindchange='pickerDateCallback'>
+  <view>当前选择:{{date}}</view>
+</picker>
+<!-- 单项选择器 -->
+<radio-group bindchange='radioCallback'>
+  <label wx:for='{{country}}' wx:key='*this'>
+    <checkbox value='{{item.name}}' checked='{{item.checked}}'>
+      {{item.value}}
+    </checkbox>
+  </label>
+</radio-group>
+<!-- 开关选择器 -->
+<switch checked='true' bindchange='switchCallback'></switch>
+<switch checked='true' type='checkbox' bindchange='switchCallback'></switch>
+<!-- 多行输入框 auto-height为false时是滚动条 -->
+<textarea auto-height='true' class='textarea' placeholder='请输入内容' placeholder-class='textarea_placeholder' bindlinechange='textareaLineCallback'>
+</textarea>
+<!-- ===================================================================================================================== -->

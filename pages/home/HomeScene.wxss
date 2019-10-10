@@ -1,0 +1,4 @@
+/* pages/home/HomeScene.wxss */
+.active{
+  color: red;
+}

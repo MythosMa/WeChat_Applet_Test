@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/HomeScene",
+    "pages/test/test",
+    "pages/event/eventTest",
+    "pages/screen/screen",
+    "pages/container/container",
+    "pages/operation/operation",
+    "pages/canvas/canvasTest"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "black",
+		"position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab_contact_normal.png",
+        "selectedIconPath": "images/tab_contact_selected.png"
+      },
+      {
+        "pagePath": "pages/home/HomeScene",
+        "text": "模板渲染等",
+        "iconPath": "images/tab_contact_normal.png",
+        "selectedIconPath": "images/tab_contact_selected.png"
+      },
+      {
+        "pagePath": "pages/canvas/canvasTest",
+        "text": "画布",
+        "iconPath": "images/tab_contact_normal.png",
+        "selectedIconPath": "images/tab_contact_selected.png"
+      },
+      {
+        "pagePath": "pages/container/container",
+        "text": "容器组件等",
+        "iconPath": "images/tab_contact_normal.png",
+        "selectedIconPath": "images/tab_contact_selected.png"
+      },
+      {
+        "pagePath": "pages/operation/operation",
+        "text": "其他组件等",
+        "iconPath": "images/tab_contact_normal.png",
+        "selectedIconPath": "images/tab_contact_selected.png"
+      }
+    ]
+  },
+  "debug": false
+}
